@@ -1,5 +1,6 @@
 import React from 'react';
 import { fireEvent } from '@testing-library/react-native';
+import '@testing-library/jest-native/extend-expect';
 import { StockScreen } from '../StockScreen';
 import { render } from '../../test-utils/test-utils';
 
@@ -91,7 +92,7 @@ jest.mock('../../hooks/useStocks', () => ({
 describe('StockScreen Filter Tests', () => {
   describe('Search functionality', () => {
     it('filters stocks by symbol', () => {
-      const { getByTestId, queryAllByTestId } = render(mockReact.createElement(StockScreen, null));
+      const { getByTestId, queryAllByTestId } = render(<StockScreen />);
       
       const searchInput = getByTestId('stock-search-input');
       fireEvent.changeText(searchInput, 'AAPL');
@@ -102,7 +103,7 @@ describe('StockScreen Filter Tests', () => {
     });
 
     it('filters stocks by name', () => {
-      const { getByTestId, queryAllByTestId } = render(mockReact.createElement(StockScreen, null));
+      const { getByTestId, queryAllByTestId } = render(<StockScreen />);
       
       const searchInput = getByTestId('stock-search-input');
       fireEvent.changeText(searchInput, 'micro');
@@ -113,7 +114,7 @@ describe('StockScreen Filter Tests', () => {
     });
 
     it('shows all stocks when search is empty', () => {
-      const { getByTestId, queryAllByTestId } = render(mockReact.createElement(StockScreen, null));
+      const { getByTestId, queryAllByTestId } = render(<StockScreen />);
       
       const searchInput = getByTestId('stock-search-input');
       fireEvent.changeText(searchInput, '');
@@ -123,7 +124,7 @@ describe('StockScreen Filter Tests', () => {
     });
 
     it('shows no stocks when search has no matches', () => {
-      const { getByTestId, queryAllByTestId } = render(mockReact.createElement(StockScreen, null));
+      const { getByTestId, queryAllByTestId } = render(<StockScreen />);
       
       const searchInput = getByTestId('stock-search-input');
       fireEvent.changeText(searchInput, 'xyz');
@@ -133,7 +134,7 @@ describe('StockScreen Filter Tests', () => {
     });
 
     it('is case insensitive', () => {
-      const { getByTestId, queryAllByTestId } = render(mockReact.createElement(StockScreen, null));
+      const { getByTestId, queryAllByTestId } = render(<StockScreen />);
       
       const searchInput = getByTestId('stock-search-input');
       fireEvent.changeText(searchInput, 'apple');

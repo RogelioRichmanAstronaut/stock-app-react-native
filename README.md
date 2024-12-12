@@ -1,50 +1,154 @@
-# Welcome to your Expo app 👋
+# Stock App - Modern React Native Stock Tracker 
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A comprehensive, user-friendly stock tracking application built with React Native and Expo. This open-source project serves for anyone looking to build a stock tracking, portfolio management, or financial markets application.
 
-## Get started
+## Features
 
-1. Install dependencies
+### Core Features
+- Real-time stock data visualization
+- Cross-platform compatibility (iOS & Android)
+- List view of stocks with essential metrics
+- Detailed stock information display
+- Offline support with data persistence
+- Smooth animations and transitions
+- Advanced sorting and filtering capabilities
 
+### Technical Implementation
+- Built with TypeScript for type safety
+- Expo framework for streamlined development
+- Modern UI with responsive design
+- Cross-platform compatibility
+- Comprehensive test coverage
+- Security best practices
+- Internationalization support
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (LTS version)
+- npm or yarn
+- Expo Go app on your mobile device (optional)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/stock-app.git
+   cd stock-app
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
+   # or
+   yarn install
    ```
 
-2. Start the app
+### Running the App
 
+1. Start the development server:
    ```bash
-    npx expo start
+   npx expo start
+   # or
+   yarn expo start
    ```
 
-In the output, you'll find options to open the app in a
+2. Run on your preferred platform:
+   - Scan QR code with Expo Go (Android) or Camera app (iOS)
+   - Press 'a' for Android emulator
+   - Press 'i' for iOS simulator
+   - Press 'w' for web browser
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+That's it! The app should now be running on your chosen platform.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Architecture
 
-## Get a fresh project
+### Code Structure
+- Functional and declarative programming patterns
+- Modular and DRY code principles
+- TypeScript with strict mode
+- Component-based architecture
 
-When you're ready, run:
+### State Management
+- React Context and useReducer for global state
+- React Query for data fetching
+- Efficient caching mechanisms
 
+### UI/UX
+- Expo components for consistent UI
+- Responsive design with Flexbox
+- Dark mode support
+- Accessibility compliance
+- Smooth animations with react-native-reanimated
+
+### Testing
+- Jest for unit testing
+- React Native Testing Library
+- Integration tests for critical flows
+- Snapshot testing for UI consistency
+
+## Testing
+
+Run tests:
 ```bash
-npm run reset-project
+npm test
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Features Breakdown
 
-## Learn more
+### Stock List View
+- Display stock symbols, names, prices
+- Real-time price updates
+- Daily percentage changes
+- Sorting capabilities
+- Filtering options
 
-To learn more about developing your project with Expo, look at the following resources:
+### Detail View
+- Comprehensive stock information
+- Historical data visualization
+- Key metrics display
+- Interactive charts
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Offline Support
+- Local data persistence
+- Automatic sync when online
+- Offline-first architecture
 
-## Join the community
+## Technical Stack
 
-Join our community of developers creating universal apps.
+- React Native
+- Expo
+- TypeScript
+- React Navigation
+- React Query
+- Jest
+- React Native Testing Library
+- Styled Components
+- React Native Reanimated
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Security
+
+- Input sanitization
+- Secure storage implementation
+- HTTPS communication
+- Best practices for API handling
+
+## Contributing
+
+Contributions are welcome! Please read our contributing guidelines before submitting PRs.
+
+## License
+
+This project is open source and available under the MIT License.
+
+## Community
+
+Join our community of developers! Feel free to:
+- Open issues
+- Submit PRs
+- Suggest improvements
+- Share your experience
+
+---
+
+Built with  using React Native and Expo. Happy coding! 
