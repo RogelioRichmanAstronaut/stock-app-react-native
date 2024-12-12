@@ -34,7 +34,7 @@ A comprehensive, user-friendly stock tracking application built with React Nativ
 1. Clone the repository:
    ```bash
    git clone https://github.com/RogelioRichmanAstronaut/stock-app-react-native.git
-   cd stock-app
+   cd stock-app-react-native
    ```
 
 2. Install dependencies:
