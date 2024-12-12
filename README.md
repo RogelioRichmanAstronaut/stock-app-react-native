@@ -111,7 +111,6 @@ npm test
 
 ### Offline Support
 - Local data persistence
-- Automatic sync when online
 - Offline-first architecture
 
 ## Technical Stack
