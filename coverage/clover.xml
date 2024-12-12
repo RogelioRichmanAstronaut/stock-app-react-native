@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1734046727759" clover="3.2.0">
+  <project timestamp="1734046727759" name="All files">
+    <metrics statements="22" coveredstatements="20" conditionals="10" coveredconditionals="10" methods="6" coveredmethods="6" elements="38" coveredelements="36" complexity="0" loc="22" ncloc="22" packages="2" files="2" classes="2"/>
+    <package name="hooks">
+      <metrics statements="14" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="useStocks.ts" path="/Users/barackobama/Documents/CODINGTESTS2024/talavera/repo3/stockApp3/src/hooks/useStocks.ts">
+        <metrics statements="14" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="8" coveredstatements="8" conditionals="10" coveredconditionals="10" methods="3" coveredmethods="3"/>
+      <file name="stockUtils.ts" path="/Users/barackobama/Documents/CODINGTESTS2024/talavera/repo3/stockApp3/src/utils/stockUtils.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="10" coveredconditionals="10" methods="3" coveredmethods="3"/>
+        <line num="2" count="6" type="stmt"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="7" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="16" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
