@@ -33,7 +33,7 @@ A comprehensive, user-friendly stock tracking application built with React Nativ
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/stock-app.git
+   git clone https://github.com/RogelioRichmanAstronaut/stock-app.git
    cd stock-app
    ```
 
