@@ -1,17 +1,27 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
+import { View, Text } from 'react-native';
 
 // Mock ThemeContext
-jest.mock('../context/ThemeContext', () => ({
-  ThemeProvider: ({ children }: { children: React.ReactNode }) => children,
-  useTheme: () => ({
-    isDark: false,
-    toggleTheme: jest.fn(),
-  }),
-}));
+const ThemeContext = React.createContext({
+  isDark: false,
+  toggleTheme: () => {},
+});
+
+const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <ThemeContext.Provider value={{ isDark: false, toggleTheme: () => {} }}>
+      {children}
+    </ThemeContext.Provider>
+  );
+};
 
 const AllTheProviders = ({ children }: { children: React.ReactNode }) => {
-  return <>{children}</>;
+  return (
+    <ThemeProvider>
+      {children}
+    </ThemeProvider>
+  );
 };
 
 const customRender = (ui: React.ReactElement, options = {}) =>
