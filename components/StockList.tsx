@@ -1,8 +1,8 @@
 import React from 'react';
 import { FlatList, StyleSheet, RefreshControl } from 'react-native';
-import { StockListProps } from '../types/stock';
+import { StockListProps } from '../src/types/stock';
 import { StockItem } from './StockItem';
-import { useTheme } from '../context/ThemeContext';
+import { useTheme } from '../src/context/ThemeContext';
 
 export function StockList({ stocks, onStockPress, onRefresh, isRefreshing }: StockListProps) {
   const { isDark } = useTheme();

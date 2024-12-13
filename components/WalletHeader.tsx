@@ -2,9 +2,9 @@ import React from 'react';
 import { View, StyleSheet, Dimensions } from 'react-native';
 import { LineChart } from 'react-native-chart-kit';
 import Animated, { FadeIn } from 'react-native-reanimated';
-import { WalletHeaderProps } from '../types/stock';
-import { formatPrice, formatPercentageChange, getChangeColor } from '../utils/stockUtils';
-import { useTheme } from '../context/ThemeContext';
+import { WalletHeaderProps } from '../src/types/stock';
+import { formatPrice, formatPercentageChange, getChangeColor } from '../src/utils/stockUtils';
+import { useTheme } from '../src/context/ThemeContext';
 
 const screenWidth = Dimensions.get('window').width;
 

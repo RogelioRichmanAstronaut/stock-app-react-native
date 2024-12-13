@@ -6,7 +6,7 @@ import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
 import { ThemeProvider, useTheme } from '../src/context/ThemeContext';
-import { ThemeSelector } from '../src/components/ThemeSelector';
+import { ThemeSelector } from '../components/ThemeSelector';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();

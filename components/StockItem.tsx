@@ -2,9 +2,9 @@ import React from 'react';
 import { Pressable, StyleSheet, View, Dimensions } from 'react-native';
 import { LineChart } from 'react-native-chart-kit';
 import Animated, { FadeInRight } from 'react-native-reanimated';
-import { StockItemProps } from '../types/stock';
-import { formatPrice, formatPercentageChange, getChangeColor } from '../utils/stockUtils';
-import { useTheme } from '../context/ThemeContext';
+import { StockItemProps } from '../src/types/stock';
+import { formatPrice, formatPercentageChange, getChangeColor } from '../src/utils/stockUtils';
+import { useTheme } from '../src/context/ThemeContext';
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 const screenWidth = Dimensions.get('window').width;

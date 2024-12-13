@@ -19,7 +19,7 @@ jest.mock('react-native-reanimated', () => {
 });
 
 // Mock the components that use Animated
-jest.mock('../../components/StockList', () => {
+jest.mock('@/components/StockList', () => {
   const mockReact = require('react');
   const mockRN = require('react-native');
   return {
@@ -45,7 +45,7 @@ jest.mock('../../components/StockList', () => {
   };
 });
 
-jest.mock('../../components/WalletHeader', () => {
+jest.mock('@/components/WalletHeader', () => {
   const mockReact = require('react');
   const mockRN = require('react-native');
   return {
@@ -80,7 +80,7 @@ const mockStocks = [
 ];
 
 // Mock the useStocks hook
-jest.mock('../../hooks/useStocks', () => ({
+jest.mock('@/hooks/useStocks', () => ({
   useStocks: () => ({
     stocks: mockStocks,
     isLoading: false,

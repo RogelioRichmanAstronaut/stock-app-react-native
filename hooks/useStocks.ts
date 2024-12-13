@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Stock } from '../types/stock';
-import stockData from '../../assets/dummy_stock_data.json';
+import { Stock } from '../src/types/stock';
+import stockData from '../assets/dummy_stock_data.json';
 
 export function useStocks() {
   const [stocks, setStocks] = useState<Stock[]>([]);

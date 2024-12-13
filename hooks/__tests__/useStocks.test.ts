@@ -1,5 +1,5 @@
 import { renderHook, act } from '@testing-library/react-native';
-import { useStocks } from '../useStocks';
+import { useStocks } from '../../../hooks/useStocks';
 
 // Mock the stock data
 jest.mock('../../../assets/dummy_stock_data.json', () => ({
